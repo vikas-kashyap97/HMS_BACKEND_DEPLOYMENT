@@ -36,8 +36,10 @@ This repository contains the backend code for the **ZeeCare Medical Institute** 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/zeecare-backend.git
-   cd zeecare-backend
+   git clone https://github.com/princeessjay/HMS_BACKEND_DEPLOYMENT.git
+   
+   cd HMS_BACKEND_DEPLOYMENT
+   
 2. **Install dependencies:**
 
    ```bash
