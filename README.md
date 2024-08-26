@@ -70,6 +70,6 @@ Licensed under the [MIT license](https://github.com/princeessjay/HMS_BACKEND_DEP
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 # Fun Fact
-**Lines of code**: 4028 😆😆😆😆😆
+**Lines of code**: 4029 😆😆😆😆
 
 
