@@ -60,7 +60,7 @@ This repository contains the backend code for the **ZeeCare Medical Institute** 
    ```bash
    npm run dev
    
-4. **Deployment**
+5. **Deployment**
 
    ```bash
    npm run build
