@@ -45,29 +45,39 @@ This repository contains the backend code for the **ZeeCare Medical Institute** 
    ```bash
    npm install
 
-3. **Create a .env file:**
+3. **Create the environment file:**
+
+   The server loads `config/config.env`. Copy the example and fill it in:
 
    ```bash
-   PORT=4000
-   MONGO_URI=your_mongodb_uri
-   JWT_SECRET=your_jwt_secret
-   CLOUDINARY_CLOUD_NAME=your_cloud_name
-   CLOUDINARY_API_KEY=your_api_key
-   CLOUDINARY_API_SECRET=your_api_secret
+   cp config/config.env.example config/config.env
+   ```
+
+   | Variable | Description |
+   | --- | --- |
+   | `PORT` | Port to listen on (default `4000`) |
+   | `MONGO_URL` | MongoDB connection string |
+   | `FRONTEND_URL` / `DASHBOARD_URL` | Exact origins of the patient site and admin dashboard (used for CORS and CSRF checks) |
+   | `JWT_SECRET_KEY` | Long random secret used to sign tokens |
+   | `JWT_EXPIRES` | Token lifetime, e.g. `7d` |
+   | `COOKIE_EXPIRE` | Cookie lifetime in days, e.g. `7` |
+   | `CLOUDINARY_CLOUD_NAME` / `CLOUDINARY_API_KEY` / `CLOUDINARY_API_SECRET` | Cloudinary credentials |
+   | `NODE_ENV` | Set to `development` for local http; leave unset/`production` when deployed over https |
 
 4. **Start the server:**
 
    ```bash
    npm run dev
-   
+   ```
+
 5. **Deployment**
 
    ```bash
-   npm run build
+   npm start
+   ```
 
 # License
 Licensed under the [MIT license](https://github.com/princeessjay/HMS_BACKEND_DEPLOYMENT/blob/main/LICENSE.md).
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 # Fun Fact
 **Lines of code**: 4029 😆😆😆😆
